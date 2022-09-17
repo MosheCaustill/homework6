@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <title>This Is My Shop</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="headline">
+      <h1>חנות הירקות של משה</h1>
+      <h2>הכי טרי שיש</h2>
+    </div>
+    <div class="bossContainer">
+      <div class="container">
+        <div class="product">
+          <img src="./media/gezer.jpg" />
+          <div class="price">3 ש"ח ליח'</div>
+          <button onclick="add(0)">הוספה</button>
+          <button onclick="remove(0)">הסרה</button>
+        </div>
+        <div class="product">
+          <img src="./media/tomato.jpg" />
+          <div class="price">2 ש"ח ליח'</div>
+          <button onclick="add(1)">הוספה</button>
+          <button onclick="remove(1)">הסרה</button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="product">
+          <img src="./media/coloraby.jpg" />
+          <div class="price">6 ש"ח ליח'</div>
+          <button onclick="add(2)">הוספה</button>
+          <button onclick="remove(2)">הסרה</button>
+        </div>
+        <div class="product">
+          <img src="./media/cucamber.jpg" />
+          <div class="price">2 ש"ח ליח'</div>
+          <button onclick="add(3)">הוספה</button>
+          <button onclick="remove(3)">הסרה</button>
+        </div>
+      </div>
+    </div>
+    <div class="amount">
+      סה"כ:
+      <p id="amount">0</p>
+    </div>
+    <div class="agala" id="agaladiv">
+      המוצרים שרכשת:
+      <p id="agala">עגלה ריקה</p>
+    </div>
+    <div class="empty"><button onclick="empty()">רוקן עגלה</button></div>
+  </body>
+  <script type="text/javascript" src="./script.js"></script>
+</html>
